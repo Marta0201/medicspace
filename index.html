@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medic Space - Clinic Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Medic Space</h1>
+        <p>Your Trusted Medical Clinic Management System</p>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide the most efficient clinic management system designed for your medical practice.</p>
+    </section>
+
+    <section id="patient-login">
+        <h2>Patient Login</h2>
+        <form action="#">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="patient-medical-record">
+        <h2>Patient Medical Record</h2>
+        <form action="#">
+            <!-- Medical History Section -->
+            <h3>Medical History</h3>
+            <label for="medical-history">Enter your medical history:</label>
+            <textarea id="medical-history" name="medical-history" rows="4" required></textarea>
+
+            <!-- Medications Section -->
+            <h3>Medications</h3>
+            <label for="medications">List any current medications:</label>
+            <textarea id="medications" name="medications" rows="4" required></textarea>
+
+          
+          
+            <!-- Insurance Information Section -->
+            <h3>Insurance Information</h3>
+            <label for="insurance-provider">Insurance Provider:</label>
+            <input type="text" id="insurance-provider" name="insurance-provider" required>
+            <label for="insurance-number">Insurance Policy Number:</label>
+            <input type="text" id="insurance-number" name="insurance-number" required>
+
+            <label for="insurance-options">Insurance Type:</label>
+            <select id="insurance-options" name="insurance-options">
+                <option value="health-insurance">Health Insurance</option>
+                <option value="dental-insurance">Dental Insurance</option>
+                <option value="vision-insurance">Vision Insurance</option>
+                <option value="no-insurance">No Insurance</option>
+            </select>
+
+            <!-- Billing Information Section -->
+            <h3>Billing Information</h3>
+            <label for="billing-address">Billing Address:</label>
+            <input type="text" id="billing-address" name="billing-address" required>
+            <label for="billing-phone">Billing Phone Number:</label>
+            <input type="tel" id="billing-phone" name="billing-phone" required>
+            <label for="billing-method">Billing Method:</label>
+            <select id="billing-method" name="billing-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="insurance">Insurance</option>
+                <option value="cash">Cash</option>
+            </select>
+
+            <!-- Medical Condition Options Section -->
+            <h3>Medical Condition Options</h3>
+            <label for="medical-conditions">Select any relevant medical conditions:</label>
+            <select id="medical-conditions" name="medical-conditions" multiple>
+                <option value="diabetes">Diabetes</option>
+                <option value="hypertension">Hypertension</option>
+                <option value="asthma">Asthma</option>
+                <option value="cancer">Cancer</option>
+                <option value="heart-disease">Heart Disease</option>
+                <option value="stroke">Stroke</option>
+                <option value="arthritis">Arthritis</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Medical Visit History Section -->
+            <h3>Medical Visit History</h3>
+            <label for="visit-history">Enter your previous visit details:</label>
+            <textarea id="visit-history" name="visit-history" rows="4" required></textarea> <label for="pharmacy-record">Pharmacy for Current Prescriptions</label>
+        <select id="pharmacy-record" name="pharmacy-record">
+            <option value="cvs">CVS</option>
+            <option value="rite-aid">Rite Aid</option>
+            <option value="walgreens">Walgreens</option>
+            <!-- Add more pharmacy options as needed -->
+        </select>
+    </section>
+
+            <!-- Database Information Section (placeholder) -->
+            <h3>Database Information</h3>
+            <label for="patient-id">Patient ID:</label>
+            <input type="text" id="patient-id" name="patient-id" readonly value="P123456">
+            <label for="last-update">Last Updated:</label>
+            <input type="text" id="last-update" name="last-update" readonly value="2024-12-01">
+
+            <button type="submit">Save Medical Record</button>
+        </form>
+    </section>
+
+    <section id="book-appointment">
+        <h2>Book an Appointment</h2>
+      
+        <form action="#">
+            <label for="doctor-name">Select Doctor</label>
+            <select id="doctor-name" name="doctor-name">
+                <option value="dr-john">Dr. John Doe - General Medicine</option>
+                <option value="dr-jane">Dr. Jane Smith - Dermatology</option>
+                <option value="dr-david">Dr. David Lee - Pediatrics</option>
+                <option value="dr-emily">Dr. Emily Clark - Neurology</option>
+                <option value="dr-robert">Dr. Robert Brown - Orthopedics</option>
+                <option value="dr-susan">Dr. Susan White - Cardiology</option>
+            </select>
+
+            <label for="appointment-date">Appointment Date</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="city">Select City</label>
+            <select id="city" name="city">
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="miami">Miami</option>
+                <option value="houston">Houston</option>
+            </select>
+
+            <label for="clinic-location">Select Clinic Location</label>
+            <select id="clinic-location" name="clinic-location">
+                <option value="downtown-clinic">Downtown Clinic</option>
+                <option value="suburb-clinic">Suburb Clinic</option>
+                <option value="outskirts-clinic">Outskirts Clinic</option>
+            </select>
+          
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p>We offer 24/7 support for all our patients. Contact us for any assistance.</p>
+
+        <h3>English Support</h3>
+        <p>Email: support@medicspace.com</p>
+        <p>Phone: +1 (800) 123-4567</p>
+
+        <h3>Soporte en Español</h3>
+        <p>Correo Electrónico: soporte@medicspace.com</p>
+        <p>Teléfono: +1 (800) 987-6543</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Medic Space. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+

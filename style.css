@@ -1,0 +1,156 @@
+/* General reset for consistency */
+body, h1, h2, p, label, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6);  /* Blue gradient */
+    padding: 20px 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.85);  /* Light grey with some transparency */
+    color: #333;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #1E3A8A; /* Dark Blue */
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Navigation styling */
+.navbar {
+    background: #374151; /* Grey color */
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #FFC107;  /* Yellow accent */
+    transform: scale(1.1);
+}
+
+/* Section styling */
+section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Form styling */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1E3A8A;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #1E3A8A;
+    box-shadow: 0 0 5px rgba(30, 58, 138, 0.5);
+}
+
+form button {
+    background: #1E3A8A;  /* Dark Blue */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: #3B82F6;  /* Lighter Blue */
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #374151;  /* Grey */
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px auto 0;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #FFC107; /* Yellow */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    form input, form select, form textarea, form button {
+        font-size: 0.9rem;
+    }
+}
